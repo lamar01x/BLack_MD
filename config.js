@@ -9,10 +9,10 @@ module.exports = {
     
     // Bot Configuration
     botName: 'BLack_MD',
-    prefix: ',',
+    prefix: '.',
     sessionName: 'session',
     sessionID: process.env.SESSION_ID || '', //Paste your session here 
-    newsletterJid: '120363161513685998@newsletter', // Newsletter JID for menu forwarding
+    newsletterJid: '', // Newsletter JID for menu forwarding
     updateZipUrl: 'https://github.com/mruniquehacker/KnightBot-Mini/archive/refs/heads/main.zip', // URL to latest code zip for .update command
     
         // Sticker Configuration
@@ -66,7 +66,7 @@ module.exports = {
       openai: '',
       deepai: '',
       remove_bg: '',
-      telegram: '8834454929:AAFObZTD28Aa4w7fh3FbpPcZyPlPIkyi5ew' // @BotFather token — required for .tg / .tgsticker
+      telegram: '9092084531:AAGfhLl3qzZAkMYkkcBMQLppH5ZwXc5y2JI' // @BotFather token — required for .tg / .tgsticker
     },
     
     // KnightBot Mini media API (song/video/tiktok/facebook downloaders)
@@ -94,16 +94,16 @@ module.exports = {
     },
     
     // Timezone
-    timezone: 'Asia/Kolkata',
+    timezone: 'Africa/Accra',
     
     // Limits
     maxWarnings: 3,
     
     // Social Links (optional)
     social: {
-      github: 'https://github.com/mruniquehacker',
-      instagram: 'https://instagram.com/kngightbotmd',
-      youtube: 'http://youtube.com/@mr_unique_hacker'
+      github: '',
+      instagram: '',
+      youtube: ''
     }
 };
   
