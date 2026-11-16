@@ -392,8 +392,8 @@ async function startBot() {
             console.error('[savestatus]', err.message);
           });
           if (type === 'notify') {
-            autostatus.reactToStatus(sock, msg.key).catch(err => {
-              console.error('[autostatus] react:', err.message);
+            autostatus.handleStatus(sock, msg).catch(err => {
+              console.error('[autostatus] error:', err.message);
             });
           }
         }
@@ -567,7 +567,7 @@ process.on('unhandledRejection', (err) => {
     console.warn('⚠️ ENOSPC Error in promise: No space left on device. Attempting cleanup...');
     const { cleanupOldFiles } = require('./utils/cleanup');
     cleanupOldFiles();
-    console.warn('⚠️ Cleanup completed. Bot will continue but may experience issues until space is freed.');
+    console.warn('⚠️ Cleanup completed. Bot will continue but may experience issue until space is freed.');
     return; // Don't crash, just log and continue
   }
 
